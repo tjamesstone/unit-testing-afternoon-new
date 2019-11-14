@@ -4,3 +4,13 @@ export const shortenText = text => {
   }
   return text;
 };
+
+export const findDuplicateStrings = arr => {
+  let newArr = arr.filter((item, index) => arr.indexOf(item) !== index)
+  return newArr
+}
+
+export const removeDuplicateStrings = arr => {
+  let newArr = arr.filter((v,i) => arr.indexOf(v) === i)
+  return(newArr)
+}
